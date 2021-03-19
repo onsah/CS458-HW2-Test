@@ -12,10 +12,22 @@ npm install
 
 ## Running
 
-To run the testing you need to have `appium` server runing and an emulator opened in android 11. Then you can run the tests by
+### Real Device (Android 10)
 
+Port: 4725
+
+To run:
 ```
-node index.js
+npx wdio configs/wdio.real.conf.js
+```
+
+### Emulator (Android 11)
+
+Port: 4723
+
+To run:
+```
+npx wdio configs/wdio.emulator.conf.js
 ```
 
 ## Testing

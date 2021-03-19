@@ -3,7 +3,7 @@ exports.config = {
     port: 4723,
     runner: 'local',
     specs: [
-        './test_cases/**/*.js'
+        './test_cases/Emulator.test.js'
     ],
     capabilities: [
         {
@@ -15,15 +15,6 @@ exports.config = {
             app: '/home/zer0/Github/CS458-HW2-Appium/app-x86-release.apk',
             automationName: 'UiAutomator2'
         },
-        /* {
-            maxInstances: 1,
-            appiumVersion: '1.13.0',
-            platformName: 'Android',
-            platformVersion: '10',
-            deviceName: 'Android Emulator2',
-            app: '/home/zer0/Github/CS458-HW2-Appium/app-release.apk',
-            automationName: 'UiAutomator2'
-        }, */
     ],
     logLevel: 'trace',
     bail: 0,
